@@ -10,3 +10,8 @@ export const login = createAsyncThunk('/login', async(data)=>{
     const res = await axios.post('http://localhost:5000/auth/login', data)
     return res.data;
 })
+
+
+//git add .
+//git commit -m 'initial commit'
+//git push
