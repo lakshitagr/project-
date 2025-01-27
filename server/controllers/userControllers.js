@@ -28,7 +28,7 @@ export const login = async (req, res) => {
 
   const token = generateToken(payload);
   return res.status(200).json({
-    message: "password",
+    message: "Login Succesfull",
     data: {
       token,
     },
