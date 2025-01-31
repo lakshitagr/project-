@@ -15,6 +15,15 @@ const userSchema = new mongoose.Schema({
       },
       phonenumber: {
         type: Number,
+      },
+      avatar : {
+        type : String ,
+       
+      },
+      role : {
+        type : String ,
+        enum : ['user', 'admin'] ,
+        default : 'user'
       }
 
 })

@@ -1,6 +1,6 @@
 import counterReducer from './slices/CounterSlices'
 import { configureStore } from '@reduxjs/toolkit';
-import loginReducer, { login } from './slices/LoginSlice'
+import loginReducer, { login } from './Slices/LoginSlice'
 
 const store = configureStore({
     reducer: {

@@ -53,6 +53,7 @@ export const register = async (req, res) => {
     email,
     phoneNumber,
     password: hashedPassword,
+    avatar: req.file.path
   };
 
   const newUser = await User.create(userData);
