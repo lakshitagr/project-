@@ -4,6 +4,7 @@ import mongoose from "mongoose";
 import userRoutes from "./routes/userRoutes.js";
 import ProductRoutes from "./routes/productRoutes.js";
 import cors from 'cors'
+import cartRoutes from "./routes/cartRoutes.js";
 
 
 
@@ -20,7 +21,7 @@ mongoose.connect(process.env.MONGODB_URI).then(() => {
 
 app.use('/auth', userRoutes)
 app.use('/api', ProductRoutes)
-
+app.use('/api', cartRoutes)
 app.listen(process.env.PORT || 3000, () => {
   console.log(`Server is running ${process.env.PORT}`);
 });
